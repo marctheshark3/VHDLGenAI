@@ -47,8 +47,8 @@ By reframing some of the coding questions to the above questions we can see if o
 | Anthropic  | Claude    | Marc |
 | OpenAI     | GPT4      | Wayne |
 | GitHub     | CoPilot   | Marc |
-| Google     | Gemini    | ? |
-| Meta       | Llama3    | ? |
+| Google     | Gemini    | Wayne |
+| Meta       | Llama3    | Wayne |
 
 ### TO DO:
 - [ ] Gather VHDL SME Docs
