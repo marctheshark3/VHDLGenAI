@@ -5,21 +5,22 @@
 There are proprietary and free VHDL simulators listed here: https://en.m.wikipedia.org/wiki/List_of_HDL_simulators
 
 ## LLM VHDL Coding Questions
-Challenge 1: Simple Combinational Logic
-Description: Design a 4-bit adder using basic logic gates.
-Evaluation: Correctness of the adder's output for all possible input combinations.
-Challenge 2: Sequential Logic with Clock
-Description: Design a synchronous D flip-flop with enable input.
-Evaluation: Correct data storage and output behavior based on clock and enable signals.
-Challenge 3: Finite State Machine (FSM)
-Description: Design a simple traffic light controller with three states: red, green, and yellow.
-Evaluation: Correct state transitions and output generation based on timing requirements.
-Challenge 4: Pipelined Data Path
-Description: Design a simple 4-stage pipeline for a multiplier.
-Evaluation: Correct data flow, pipeline stages, and overall performance.
-Challenge 5: Parameterized Design Entity
-Description: Create a generic n-bit shift register with configurable shift direction.
-Evaluation: Correct functionality for different bit widths and shift directions.
+1. Challenge 1: Simple Combinational Logic
+* Description: Design a 4-bit adder using basic logic gates.
+* Evaluation: Correctness of the adder's output for all possible input combinations.
+2. Challenge 2: Sequential Logic with Clock
+* Description: Design a synchronous D flip-flop with enable input.
+* Evaluation: Correct data storage and output behavior based on clock and enable signals.
+3. Challenge 3: Finite State Machine (FSM)
+* Description: Design a simple traffic light controller with three states: red, green, and yellow.
+* Evaluation: Correct state transitions and output generation based on timing requirements.
+4. Challenge 4: Pipelined Data Path
+* Description: Design a simple 4-stage pipeline for a multiplier.
+* Evaluation: Correct data flow, pipeline stages, and overall performance.
+5. Challenge 5: Parameterized Design Entity
+* Description: Create a generic n-bit shift register with configurable shift direction.
+* Evaluation: Correct functionality for different bit widths and shift directions.
+
 These challenges progressively increase in complexity, testing the LLM's ability to understand and apply VHDL concepts, from basic logic gates to advanced design techniques like pipelining and parameterization.
 
 Five VHDL and FPGA Design Questions
