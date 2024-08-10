@@ -2,6 +2,7 @@
 
 ## VDHL Needs
 1. What is a good asic simulator we can run
+There are proprietary and free VHDL simulators listed here: https://en.m.wikipedia.org/wiki/List_of_HDL_simulators
 
 ## LLM VHDL Coding Questions
 Challenge 1: Simple Combinational Logic
