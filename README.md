@@ -51,8 +51,19 @@ By reframing some of the coding questions to the above questions we can see if o
 | Google     | Gemini    | Wayne |
 | Meta       | Llama3    | Wayne |
 
+## LLM Performance Table
+
+| LLM      | Challenge 1 | Challenge 2 | Challenge 3 | Challenge 4 | Challenge 5 |
+|----------|-------------|-------------|-------------|-------------|-------------|
+| Claude   | Pass        | In progress        | In progress        | In progress        | In progress        |
+| GPT4     | In progress        | In progress        | In progress        | In progress        | In progress        |
+| CoPilot  | In progress        | In progress        | In progress        | In progress        | In progress        |
+| Gemini   | In progress        | In progress        | In progress        | In progress        | In progress        |
+| Llama3   | In progress        | In progress        | In progress        | In progress        | In progress        |
+
+
 ### TO DO:
-- [ ] Gather VHDL SME Docs
-- [ ] Gather VHDL Questions
+- [x] Gather VHDL SME Docs
+- [x] Gather VHDL Questions
 - [ ] Test/Validate LLM(s)
 - [ ] Write some sort of report
