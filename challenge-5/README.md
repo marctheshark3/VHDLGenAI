@@ -1,4 +1,6 @@
-Challenge 5: Parameterized Design Entity
+# Challenge 5
+
+Parameterized Design Entity
 Description: Create a generic n-bit shift register with configurable shift direction.
 Evaluation: Correct functionality for different bit widths and shift directions.
 
