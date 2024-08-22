@@ -1,3 +1,4 @@
+
 Challenge 4: Pipelined Data Path
 Description: Design a simple 4-stage pipeline for a multiplier.
 Evaluation: Correct data flow, pipeline stages, and overall performance.
