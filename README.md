@@ -47,9 +47,9 @@ By reframing some of the coding questions to the above questions we can see if o
 |------------|-----------|---------|
 | Anthropic  | Claude    | Marc |
 | OpenAI     | GPT4      | Wayne |
-| GitHub     | CoPilot   | Marc |
+|<del>GitHub</dev> | <del>CoPilot</dev> | <del>Marc</dev> |
 | Google     | Gemini    | Wayne |
-| Meta       | Llama3    | Wayne |
+| Meta       | Llama3    | Marc |
 
 ## LLM Performance Table
 
@@ -57,7 +57,7 @@ By reframing some of the coding questions to the above questions we can see if o
 |----------|-------------|-------------|-------------|-------------|-------------|
 | Claude   | Pass        | In progress        | In progress        | In progress        | In progress        |
 | GPT4     | In progress        | In progress        | In progress        | In progress        | In progress        |
-| CoPilot  | In progress        | In progress        | In progress        | In progress        | In progress        |
+| <del>CoPilot</dev>  | OBE | OBE | OBE | OBE | OBE |
 | Gemini   | In progress        | In progress        | In progress        | In progress        | In progress        |
 | Llama3   | In progress        | In progress        | In progress        | In progress        | In progress        |
 
@@ -67,3 +67,6 @@ By reframing some of the coding questions to the above questions we can see if o
 - [x] Gather VHDL Questions
 - [ ] Test/Validate LLM(s)
 - [ ] Write some sort of report
+
+### Notes
+Github Copilot has been deemed as OBE due to this LLM being trained on gits repositories and the amount if VHDL code is small. In terms of use case Github's CoPilot would be great to use and recreate. This sort of capability is similar to Continue as VS code plugin.
