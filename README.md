@@ -56,7 +56,7 @@ By reframing some of the coding questions to the above questions we can see if o
 
 | LLM      | Challenge 1 | Challenge 2 | Challenge 3 | Challenge 4 | Challenge 5 |
 |----------|-------------|-------------|-------------|-------------|-------------|
-| Claude   | Pass        | In progress        | In progress        | In progress        | In progress        |
+| Claude   | Pass        | Pass        | Pass        | Pass        | Pass        |
 | GPT4     | In progress        | In progress        | In progress        | In progress        | In progress        |
 | <del>CoPilot</dev>  | OBE | OBE | OBE | OBE | OBE |
 | Gemini   | In progress        | In progress        | In progress        | In progress        | In progress        |
