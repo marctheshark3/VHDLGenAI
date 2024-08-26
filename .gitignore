@@ -1,0 +1,5 @@
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Jupyter Notebook output cells saved within the .ipynb file itself
+**/*.ipynb
