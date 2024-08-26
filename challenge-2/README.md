@@ -11,7 +11,7 @@ Use a professional tone, as you are an expert in the VHDL coding language. Be as
 Prompt:
 I need you to design a synchronous D flip-flop with enable input. You will be evaluated on correct data storage and output behavior based on clock and enable signals.
 
-Llama3: 
+Llama3/Grok2: 
 As an expert in VHDL coding, I need you to design a synchronous D flip-flop with enable input. Use a professional tone and be as detailed as possible in the comments of the code so its explainable. You will be evaluated on correct data flow, pipeline stages, and overall performance.
 
 Llama 3 response:

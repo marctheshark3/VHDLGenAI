@@ -50,6 +50,7 @@ By reframing some of the coding questions to the above questions we can see if o
 |<del>GitHub</dev> | <del>CoPilot</dev> | <del>Marc</dev> |
 | Google     | Gemini    | Wayne |
 | Meta       | Llama3    | Marc |
+| X          | Grok 2 (betA) | Marc |
 
 ## LLM Performance Table
 
@@ -59,7 +60,8 @@ By reframing some of the coding questions to the above questions we can see if o
 | GPT4     | In progress        | In progress        | In progress        | In progress        | In progress        |
 | <del>CoPilot</dev>  | OBE | OBE | OBE | OBE | OBE |
 | Gemini   | In progress        | In progress        | In progress        | In progress        | In progress        |
-| Llama3   | In progress        | In progress        | In progress        | In progress        | In progress        |
+| Llama3   | Ready to Test | Ready to Test | Ready to Test | Ready to Test | Ready to Test |
+| Grok 2   | Ready to Test | Ready to Test | Ready to Test | Ready to Test | Ready to Test |
 
 
 ### TO DO:

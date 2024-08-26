@@ -4,7 +4,7 @@
 Simple VHDL Combinational Logic
 Description: Design a 4-bit adder using basic logic gates.
 ## Prompt
-Claude/Llama3: As an expert in VHDL coding, I need you to design a 4-bit adder using basic logic gates. Use a professional tone and be as detailed as possible in the comments of the code so its explainable. You will be evaluated on correct data flow, pipeline stages, and overall performance.
+Claude/Llama3/Grok2: As an expert in VHDL coding, I need you to design a 4-bit adder using basic logic gates. Use a professional tone and be as detailed as possible in the comments of the code so its explainable. You will be evaluated on correct data flow, pipeline stages, and overall performance.
 ## Output Explaination
 
 #### Llamma 3
