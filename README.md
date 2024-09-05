@@ -60,8 +60,10 @@ By reframing some of the coding questions to the above questions we can see if o
 | GPT4     | In progress        | In progress        | In progress        | In progress        | In progress        |
 | <del>CoPilot</dev>  | OBE | OBE | OBE | OBE | OBE |
 | Gemini   | In progress        | In progress        | In progress        | In progress        | In progress        |
-| Llama3   | Ready to Test | Ready to Test | Ready to Test | Ready to Test | Ready to Test |
-| Grok 2   | Ready to Test | Ready to Test | Ready to Test | Ready to Test | Ready to Test |
+| Llama3   | Failed | Failed | Failed | Failed | Failed |
+| Grok 2   | Failed | Pass | Failed | Failed | Pass |
+
+Failed - We will iterate
 
 
 ### TO DO:
