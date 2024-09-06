@@ -46,7 +46,7 @@ By reframing some of the coding questions to the above questions we can see if o
 | Company    | Model     | Contact |
 |------------|-----------|---------|
 | Anthropic  | Claude    | Marc |
-| OpenAI     | GPT4      | Wayne |
+| OpenAI     | GPT4      | Marc |
 |<del>GitHub</dev> | <del>CoPilot</dev> | <del>Marc</dev> |
 | Google     | Gemini    | Wayne |
 | Meta       | Llama3    | Marc |
@@ -54,14 +54,14 @@ By reframing some of the coding questions to the above questions we can see if o
 
 ## LLM Performance Table
 
-| LLM      | Challenge 1 | Challenge 2 | Challenge 3 | Challenge 4 | Challenge 5 |
-|----------|-------------|-------------|-------------|-------------|-------------|
-| Claude   | Pass        | Pass        | Pass        | Pass        | Pass        |
-| GPT4     | In progress        | In progress        | In progress        | In progress        | In progress        |
-| <del>CoPilot</dev>  | OBE | OBE | OBE | OBE | OBE |
-| Gemini   | In progress        | In progress        | In progress        | In progress        | In progress        |
-| Llama3   | Failed | Failed | Failed | Failed | Failed |
-| Grok 2   | Failed | Pass | Failed | Failed | Pass |
+| LLM      | Challenge 1 | Challenge 2 | Challenge 3 | Challenge 4 | Challenge 5 | RAG (Y/N) |
+|----------|-------------|-------------|-------------|-------------|-------------|-------------|
+| Claude   | Pass        | Pass        | Pass        | Pass        | Pass        | Y |
+| GPT4     | Reviewing | Reviewing | Reviewing | Reviewing | Reviewing | Reviewing | Y |
+| <del>CoPilot</dev>  | OBE | OBE | OBE | OBE | OBE | OBS |
+| Gemini   | In progress | In progress | In progress | In progress | In progress | ? |
+| Llama3   | Failed | Failed | Failed | Failed | Failed | N |
+| Grok 2   | Failed | Pass | Failed | Failed | Pass | N |
 
 Failed - We will iterate
 
