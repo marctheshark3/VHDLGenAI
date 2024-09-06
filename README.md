@@ -59,7 +59,7 @@ By reframing some of the coding questions to the above questions we can see if o
 | Claude   | Pass        | Pass        | Pass        | Pass        | Pass        | Y |
 | GPT4     | Reviewing | Reviewing | Reviewing | Reviewing | Reviewing | Y |
 | <del>CoPilot</dev>  | OBE | OBE | OBE | OBE | OBE | OBS |
-| Gemini   | In progress | In progress | In progress | In progress | In progress | ? |
+| Gemini   | Reviewing | Reviewing | Reviewing | Reviewing | Reviewing | N |
 | Llama3   | Failed | Failed | Failed | Failed | Failed | N |
 | Grok 2   | Failed | Pass | Failed | Failed | Pass | N |
 

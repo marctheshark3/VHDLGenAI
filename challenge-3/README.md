@@ -7,7 +7,7 @@ Use a professional tone, as you are an expert in the VHDL coding language. Be as
 Prompt:
 I need you to design a simple traffic light controller with three states: red, green, and yellow. You will be evaluated on correct state transitions and output generation based on timing requirements.
 
-Llama3/Grok2: 
+Llama3/Grok2/chatgpt/gemini: 
 As an expert in VHDL coding, I need you to design a simple traffic light controller with three states: red, green, and yellow. Use a professional tone and be as detailed as possible in the comments of the code so its explainable. You will be evaluated on correct data flow, pipeline stages, and overall performance.
 
 Llama3 response:

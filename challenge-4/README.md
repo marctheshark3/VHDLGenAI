@@ -10,7 +10,7 @@ Use a professional tone, as you are an expert in the VHDL coding language. Be as
 
 ## Prompting:
 
-### Llama3 & GROK 2.0 (beta) - NO RAG
+### Llama3, GROK 2.0 (beta), Gemini, Chatgpt
 As an expert in VHDL coding,I need you to design a simple 4-stage pipeline for a multiplier. Use a professional tone and be as detailed as possible in the comments of the code so its explainable. You will be evaluated on correct data flow, pipeline stages, and overall performance.
 
 #### Llama3 Response
