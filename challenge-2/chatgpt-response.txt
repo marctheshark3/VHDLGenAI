@@ -1,0 +1,23 @@
+Explanation:
+Entity Declaration:
+
+Inputs:
+D: Data input to be stored in the flip-flop.
+CLK: Clock signal to synchronize the flip-flop's operations.
+EN: Enable input that allows the flip-flop to capture data only when high.
+Outputs:
+Q: The stored data value.
+Qn: The inverted version of Q.
+Architecture Body:
+
+Synchronous Behavior:
+The process is sensitive to the rising edge of the clock (rising_edge(CLK)), ensuring that data is only updated in sync with the clock.
+Enable Control:
+When EN is high (EN = '1'), the flip-flop captures the data from D and stores it in Q.
+If EN is low, the flip-flop holds the previous value, ensuring stable operation when no new data is needed.
+Inverted Output:
+Qn is continuously updated as the complement of Q without requiring a clock edge.
+Key Performance and Data Flow Considerations:
+Synchronous Operation: Data (D) is captured only on the rising edge of the clock, ensuring robust synchronization in digital systems.
+Enable Input: The enable (EN) ensures the flip-flop only updates when required, saving power and preventing unnecessary state changes.
+Pipelining: While this basic flip-flop design operates in a single stage, it can be incorporated into more complex designs for pipelining by cascading multiple flip-flops for sequential stages.

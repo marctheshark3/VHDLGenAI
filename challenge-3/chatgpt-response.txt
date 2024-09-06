@@ -1,0 +1,25 @@
+Explanation:
+Entity Declaration:
+
+Inputs:
+CLK: Clock signal used to trigger state transitions.
+RESET: Reset signal to initialize the state machine back to the red state.
+Outputs:
+RED, GREEN, YELLOW: Signals that control the traffic light, corresponding to the red, green, and yellow lights.
+Architecture Body:
+
+State Machine:
+The controller uses a state machine with three states: Red_State, Green_State, and Yellow_State.
+State Transitions: The controller transitions between states based on a timer (Counter). When the counter reaches a defined time limit (e.g., RED_TIME), the state transitions to the next one.
+Counter:
+The counter serves as a timer, counting clock cycles to determine how long the system remains in each state.
+Different time periods are defined for the red, green, and yellow states (RED_TIME, GREEN_TIME, YELLOW_TIME).
+Next State Logic:
+The NextState_Process handles the logic for determining when the state machine should transition to the next state based on the value of the counter.
+Output Logic:
+The OutputLogic_Process controls the RED, GREEN, and YELLOW signals based on the current state, ensuring that only one light is on at any given time.
+Key Considerations for Performance and Data Flow:
+Synchronous Design: The state machine is driven by the rising edge of the clock, ensuring all transitions are synchronized.
+Pipeline Stages: The controller transitions through three defined pipeline stages (Red_State, Green_State, Yellow_State), each based on the counter.
+Scalability: The design can easily be extended to more complex traffic light systems (e.g., with pedestrian crossings) by adding more states or signals.
+This design effectively models the traffic light system with clear state transitions, precise timing, and proper synchronous behavior.

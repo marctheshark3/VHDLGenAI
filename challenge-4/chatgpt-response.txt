@@ -1,0 +1,28 @@
+Explanation:
+Entity Declaration:
+
+Inputs:
+CLK: Clock signal used to synchronize the four pipeline stages.
+RESET: Reset signal that initializes the pipeline registers and output.
+A, B: 8-bit inputs representing the two operands to be multiplied.
+Outputs:
+PRODUCT: The 16-bit result of multiplying A and B.
+Architecture Body:
+
+Pipeline Registers:
+Four pipeline stages are implemented to perform multiplication progressively. Each stage has registers (Stage1_A, Stage2_B, etc.) to store intermediate values.
+This approach allows each stage to complete its task in parallel with other stages, improving throughput by processing independent inputs in each clock cycle.
+Pipeline Stages:
+Stage 1: Latches the inputs A and B. These values are passed to Stage 2.
+Stage 2: Performs the actual multiplication (A * B) and produces a partial product. This partial product is passed to Stage 3.
+Stage 3: Propagates the partial product to the next stage, readying it for the final step.
+Stage 4: Stores the final product and makes it available at the output (PRODUCT).
+Clocked Process:
+The process triggers on the rising edge of the clock. It also checks for a reset signal, which initializes all pipeline registers to zero.
+On each clock cycle, data flows from one stage to the next, ensuring smooth pipelined execution.
+Performance Considerations:
+
+Data Flow: The data flows sequentially through four stages, with each stage working in parallel on different inputs, allowing higher throughput and efficient use of clock cycles.
+Pipeline Stages: The division into four stages minimizes the critical path (the longest path of logic), increasing clock frequency and improving performance.
+Throughput: A new multiplication operation can be initiated every clock cycle, resulting in high throughput once the pipeline is filled.
+This design efficiently balances performance and correctness by dividing the multiplication into smaller tasks that can be executed concurrently across pipeline stages.

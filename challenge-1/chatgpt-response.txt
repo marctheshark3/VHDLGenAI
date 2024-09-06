@@ -1,0 +1,17 @@
+Explanation:
+Entity Declaration:
+
+Two 4-bit inputs, A and B, are added together.
+Cin is the carry-in for the LSB, and Sum is the 4-bit result.
+Cout is the carry-out from the MSB addition.
+Architecture Body:
+
+This uses a behavioral modeling style to implement a ripple-carry adder.
+Pipeline stages represent the sequential addition of each bit, propagating carry signals from lower to higher bits.
+Full Adder Logic:
+
+For each bit, the sum is calculated using the XOR gate, while the carry-out is generated using AND and OR gates.
+The design uses internal signals (C) to handle the carry propagation between bit positions.
+Key Considerations for Performance:
+Ripple Carry Delay: The carry-out of each bit is calculated after the carry-in, which may introduce delay for the entire addition (as the carry must propagate through all bits).
+Pipelining: The adder logic is divided into stages for clarity, though it's not a fully pipelined architecture (this would require additional registers).
