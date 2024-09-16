@@ -5,9 +5,8 @@ Description: Design a simple 4-stage pipeline for a multiplier.
 Evaluation: Correct data flow, pipeline stages, and overall performance.
 
 ### Prompting
-<Error>
-
-<code>
+We got this error in our code: {error}
+Fix this code {code}
 
 ## LLAMA 3
 Assignment 4 – Pipeline Multiplier: Design failed – syntax error on line 2 [missing “_1164.all” in ieee.std_logic_1164 package declaration], syntax error on lines 37,38 [sign_extend function is not defined].
