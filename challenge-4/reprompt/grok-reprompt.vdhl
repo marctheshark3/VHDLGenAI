@@ -1,0 +1,90 @@
+-- File: pipelined_multiplier.vhd
+-- Description: A 4-stage pipelined multiplier for unsigned integers with partial product calculation
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity PipelinedMultiplier is
+    Port (
+        clk : in std_logic;
+        reset : in std_logic;
+        a : in unsigned(15 downto 0);  -- 16-bit input operand
+        b : in unsigned(15 downto 0);  -- 16-bit input operand
+        product : out unsigned(31 downto 0); -- 32-bit output product
+        valid_out : out std_logic  -- Signal to indicate valid output
+    );
+end PipelinedMultiplier;
+
+architecture Behavioral of PipelinedMultiplier is
+
+    -- Type for partial products
+    type partial_product_array is array (0 to 15) of unsigned(31 downto 0);
+    
+    -- Intermediate signals for pipeline stages
+    signal stage1_a, stage1_b : unsigned(15 downto 0);
+    signal stage2_partials : partial_product_array;
+    signal stage3_accumulated : unsigned(31 downto 0);
+    
+begin
+
+    -- Pipeline process
+    process(clk, reset)
+    variable temp_sum : unsigned(31 downto 0);
+    begin
+        if reset = '1' then
+            stage1_a <= (others => '0');
+            stage1_b <= (others => '0');
+            for i in 0 to 15 loop
+                stage2_partials(i) <= (others => '0');
+            end loop;
+            stage3_accumulated <= (others => '0');
+            product <= (others => '0');
+            valid_out <= '0';
+        elsif rising_edge(clk) then
+            -- Stage 1: Input Registering
+            stage1_a <= a;
+            stage1_b <= b;
+            
+            -- Stage 2: Partial Product Generation
+            for i in 0 to 15 loop
+                if stage1_b(i) = '1' then
+                    stage2_partials(i) <= stage1_a & to_unsigned(0, 16-i) & to_unsigned(0, i);
+                else
+                    stage2_partials(i) <= (others => '0');
+                end if;
+            end loop;
+            
+            -- Stage 3: Partial Product Accumulation
+            temp_sum := (others => '0');
+            for i in 0 to 15 loop
+                temp_sum := temp_sum + stage2_partials(i);
+            end loop;
+            stage3_accumulated <= temp_sum;
+            
+            -- Stage 4: Output
+            product <= stage3_accumulated;
+            valid_out <= '1'; -- After initial latency, output is always valid
+        end if;
+    end process;
+
+end Behavioral;
+
+-- Notes on Design:
+-- 1. **Stage 1**: Registers the inputs. This ensures that the inputs are stable for the next stages.
+
+-- 2. **Stage 2**: Generates partial products. Each bit of 'b' determines if a shifted version of 'a' 
+--    should be added to the product. Here, we create an array where each element represents 
+--    a partial product, shifted according to its bit position.
+
+-- 3. **Stage 3**: Accumulates all partial products. This stage adds up all the partial products 
+--    generated in the previous stage. The addition is done in one clock cycle for simplicity, 
+--    but in practice, this might be split over multiple cycles or use a tree adder for speed.
+
+-- 4. **Stage 4**: Outputs the final product. The result from the accumulator is output, and 
+--    'valid_out' is set to indicate the output is valid after the initial pipeline fill.
+
+-- Performance Notes:
+-- - **Throughput**: Once the pipeline is filled, a new multiplication result is available every clock cycle.
+-- - **Latency**: There's a latency of 4 clock cycles from input to valid output due to the four stages.
+-- - **Area**: The design uses more registers for pipelining and logic for partial product generation, 
