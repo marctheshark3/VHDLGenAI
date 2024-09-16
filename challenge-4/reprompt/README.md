@@ -5,7 +5,9 @@ Description: Design a simple 4-stage pipeline for a multiplier.
 Evaluation: Correct data flow, pipeline stages, and overall performance.
 
 ### Prompting
-As an expert in VHDL coding,I need you to design a simple 4-stage pipeline for a multiplier. Use a professional tone and be as detailed as possible in the comments of the code so its explainable. You will be evaluated on correct data flow, pipeline stages, and overall performance. Now you have given me the code below along with the following error, can you generate the code to meet the criteria we have mentioned previously AND fix the bug and errors we are seeing?
+<Error>
+
+<code>
 
 ## LLAMA 3
 Assignment 4 – Pipeline Multiplier: Design failed – syntax error on line 2 [missing “_1164.all” in ieee.std_logic_1164 package declaration], syntax error on lines 37,38 [sign_extend function is not defined].
