@@ -42,8 +42,7 @@ Assignment 3 – Traffic light: Design failed – Light changes from red to yell
  
 Assignment 4 – Pipeline Multiplier: Design failed – The code is incomplete. There are comments in lines 42 and 56 with instructions but the logic has not been implemented by the LLM.
  
-Assignment 5 – Shift Register: Design failed – The input data does not get shifted in due to incorrect assignments in lines 26 and 28. Also, data_in should be a serial data of type std_logic. 
- 1f440_eyes 1
+Assignment 5 – Shift Register: Design failed – The input data does not get shifted in due to incorrect assignments in lines 26 and 28. Also, data_in should be a serial data of type std_logic.
 
 ## CLAUDE 
 Claude assignment 2 - DFF w enable: functioning as expected. 
