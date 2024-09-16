@@ -1,0 +1,50 @@
+-- File: four_bit_adder.vhd
+-- Description: A 4-bit ripple carry adder implemented using basic logic gates
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- FullAdder entity and architecture defined first
+entity FullAdder is
+    Port (
+        x, y, cin : in  std_logic;
+        sum, cout : out std_logic
+    );
+end FullAdder;
+
+architecture GateLevel of FullAdder is
+begin
+    -- Sum = x XOR y XOR cin
+    sum <= (x xor y) xor cin;
+    
+    -- Carry out = (x AND y) OR (cin AND (x XOR y))
+    cout <= (x and y) or (cin and (x xor y));
+end GateLevel;
+
+-- Main 4-bit adder entity
+entity FourBitAdder is
+    Port (
+        A    : in  std_logic_vector(3 downto 0); -- 4-bit input A
+        B    : in  std_logic_vector(3 downto 0); -- 4-bit input B
+        Cin  : in  std_logic;                    -- Carry in
+        Sum  : out std_logic_vector(3 downto 0); -- Sum output
+        Cout : out std_logic                     -- Carry out
+    );
+end FourBitAdder;
+
+architecture Behavioral of FourBitAdder is
+    -- Intermediate signals for carry between bits
+    signal c1, c2, c3 : std_logic;
+    
+begin
+
+    -- Instantiate four full adders for each bit of the 4-bit adder
+    FA0: FullAdder port map (A(0), B(0), Cin, Sum(0), c1);
+    FA1: FullAdder port map (A(1), B(1), c1,  Sum(1), c2);
+    FA2: FullAdder port map (A(2), B(2), c2,  Sum(2), c3);
+    FA3: FullAdder port map (A(3), B(3), c3,  Sum(3), Cout);
+
+end Behavioral;
+
+-- Notes on Design:
+-- (Your detailed notes remain unchanged as they are correct and helpful for understanding the design.)
