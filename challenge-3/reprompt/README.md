@@ -11,7 +11,7 @@ Assignment 3 – Traffic light SM: Design failed – syntax error on line 2 [mis
 ## GROK 2 BETA
 Assignment 3 – Traffic light: Design failed - fails to comply with state transition times defined in the architecture.
  
-## CHAGPT
+## CHATGPT
 Assignment 3 – Traffic light: Design failed – Simulation error due to counter being driven in multiple processes. Only the “TrafficLight_Process” should reset/increment the counter.
 
 ## GEMINI
