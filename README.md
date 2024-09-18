@@ -56,10 +56,10 @@ By reframing some of the coding questions to the above questions we can see if o
 ### First Pass Through
 | LLM      | Challenge 1 | Challenge 2 | Challenge 3 | Challenge 4 | Challenge 5 | RAG (Y/N) |
 |----------|-------------|-------------|-------------|-------------|-------------|-------------|
-| Claude   | Pass        | Pass        | Pass        | Fail        | Pass        | Y |
-| GPT4     | Pass | Fail | Fail | Fail | Pass | Y |
+| Claude   | Pass        | Pass        | Pass        | Failed        | Pass        | Y |
+| GPT4     | Pass | Failed | Failed | Failed | Pass | Y |
 | <del>CoPilot</dev>  | OBE | OBE | OBE | OBE | OBE | OBS |
-| Gemini   | Fail | Fail | Fail | Fail | Fail | N |
+| Gemini   | Failed | Failed | Failed | Failed | Failed | N |
 | Llama3   | Failed | Failed | Failed | Failed | Failed | N |
 | Grok 2   | Failed | Pass | Failed | Failed | Pass | N |
 
