@@ -20,3 +20,6 @@ Assignment 4 – Pipeline Multiplier: Design failed – Error in line 67, compil
  
 ## GEMINI
 Assignment 4 – Pipeline Multiplier: Design failed – The code is incomplete. There are comments in lines 42 and 56 with instructions but the logic has not been implemented by the LLM.
+
+## Claude
+Pipeline Multiplier: Design failed – the pipeline signals are not being driven correctly, resulting in signals having a value of 'x' (instead of 0 or 1). This has propagated through the logic, causing additional signals to have an unknown state. 
