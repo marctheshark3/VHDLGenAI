@@ -53,17 +53,25 @@ By reframing some of the coding questions to the above questions we can see if o
 | X          | Grok 2 (betA) | Marc |
 
 ## LLM Performance Table
-
+### First Pass Through
 | LLM      | Challenge 1 | Challenge 2 | Challenge 3 | Challenge 4 | Challenge 5 | RAG (Y/N) |
 |----------|-------------|-------------|-------------|-------------|-------------|-------------|
-| Claude   | Pass        | Pass        | Pass        | Pass        | Pass        | Y |
-| GPT4     | Reviewing | Reviewing | Reviewing | Reviewing | Reviewing | Y |
+| Claude   | Pass        | Pass        | Pass        | Fail        | Pass        | Y |
+| GPT4     | Pass | Fail | Fail | Fail | Pass | Y |
 | <del>CoPilot</dev>  | OBE | OBE | OBE | OBE | OBE | OBS |
-| Gemini   | Reviewing | Reviewing | Reviewing | Reviewing | Reviewing | N |
+| Gemini   | Fail | Fail | Fail | Fail | Fail | N |
 | Llama3   | Failed | Failed | Failed | Failed | Failed | N |
 | Grok 2   | Failed | Pass | Failed | Failed | Pass | N |
 
-Failed - We will iterate
+
+### Second Pass Through - REPROMPTING
+| LLM      | Challenge 1 | Challenge 2 | Challenge 3 | Challenge 4 | Challenge 5 | RAG (Y/N) |
+|----------|-------------|-------------|-------------|-------------|-------------|-------------|
+| Claude   | NA        | NA        | NA        | REPROMPTING        | NA        | Y |
+| GPT4     | NA | REPROMPTING | REPROMPTING | REPROMPTING | NA | Y |
+| Gemini   | REPROMPTING | REPROMPTING | REPROMPTING | REPROMPTING | REPROMPTING | N |
+| Llama3   | REPROMPTING | REPROMPTING | REPROMPTING | REPROMPTING | REPROMPTING | N |
+| Grok 2   | REPROMPTING | NA | REPROMPTING | REPROMPTING | NA | N |
 
 
 ### TO DO:
