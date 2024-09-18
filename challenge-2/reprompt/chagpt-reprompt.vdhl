@@ -1,1 +1,35 @@
 
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Define the entity of the D Flip-Flop with enable.
+entity DFlipFlopWithEnable is
+    Port ( D   : in  STD_LOGIC;  -- Data input (D)
+           CLK : in  STD_LOGIC;  -- Clock input (CLK)
+           EN  : in  STD_LOGIC;  -- Enable input (EN)
+           Q   : out STD_LOGIC;  -- Output (Q)
+           Qn  : out STD_LOGIC); -- Inverted output (Qn)
+end DFlipFlopWithEnable;
+
+-- Architecture: Behavioral modeling of the D Flip-Flop.
+architecture Behavioral of DFlipFlopWithEnable is
+    signal Q_reg : STD_LOGIC;  -- Internal signal to hold the flip-flop state
+begin
+    -- Process that triggers on the rising edge of the clock.
+    FlipFlop_Process : process(CLK)
+    begin
+        -- Check for rising edge of the clock.
+        if rising_edge(CLK) then
+            -- Enable is checked to determine whether the flip-flop should update.
+            if EN = '1' then
+                -- When EN is high, capture the data on D and store it in Q_reg.
+                Q_reg <= D;
+            end if;
+        end if;
+    end process FlipFlop_Process;
+
+    -- Output assignments
+    Q <= Q_reg;      -- Drive output Q from the internal signal
+    Qn <= not Q_reg; -- Drive inverted output Qn
+
+end Behavioral;
