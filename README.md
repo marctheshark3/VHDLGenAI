@@ -51,6 +51,7 @@ By reframing some of the coding questions to the above questions we can see if o
 | Google     | Gemini    | Wayne |
 | Meta       | Llama3    | Marc |
 | X          | Grok 2 (betA) | Marc |
+| Codeium    | ??? | Marc |
 
 ## LLM Performance Table
 ### First Pass Through
@@ -62,6 +63,7 @@ By reframing some of the coding questions to the above questions we can see if o
 | Gemini   | Failed | Failed | Failed | Failed | Failed | N |
 | Llama3   | Failed | Failed | Failed | Failed | Failed | N |
 | Grok 2   | Failed | Pass | Failed | Failed | Pass | N |
+| Codeium   | Reviewing | Reviewing | Reviewing | Reviewing | Reviewing | Y |
 
 
 ### Second Pass Through - REPROMPTING
