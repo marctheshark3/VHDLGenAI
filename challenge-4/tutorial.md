@@ -1,5 +1,3 @@
-Sure, here's a tutorial on how to solve Challenge 4: Pipelined Data Path.
-
 ## Description
 
 In this challenge, you are asked to design a simple pipelined data path for a multiplier. The multiplier takes two inputs, `a` and `b`, and produces a single output, `product`. The goal is to implement a multiplier using a pipelined architecture, which allows for higher throughput by processing multiple inputs in parallel.
