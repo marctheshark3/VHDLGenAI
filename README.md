@@ -75,6 +75,38 @@ By reframing some of the coding questions to the above questions we can see if o
 | Llama3   | REPROMPTING | REPROMPTING | REPROMPTING | REPROMPTING | REPROMPTING | N |
 | Grok 2   | REPROMPTING | NA | REPROMPTING | REPROMPTING | NA | N |
 
+# FPGA Design Migration Guide
+
+## Challenge A: Same Family Migration
+Migrate design from xcvp1802lsvc4072 to xcvp1802vsva5601 (Xilinx Versal Premium)
+
+### Tasks
+1. Update IO constraints file
+   - Review and modify pinout for target package
+   - Verify signal types
+   - Validate I/O standards
+   - Ensure XDC format compliance
+
+## Challenge B: Cross-Family Migration 
+Migrate design from xcvp1802lsvc4072 (Versal Premium) to xcvu9pflga2104 (Virtex Ultrascale+)
+
+### Tasks
+1. Analyze design dependencies
+   - Review top.vhd
+   - Identify device-specific elements
+   - Assess primitive compatibility
+   - Recommend replacements
+
+2. Update IO constraints
+   - Modify pinout for target package
+   - Verify signal compatibility
+   - Update I/O standards
+   - Ensure XDC format compliance
+
+3. Resource utilization analysis
+   - Compare available resources
+   - Review utilization report
+   - Identify potential bottlenecks
 
 ### TO DO:
 - [x] Gather VHDL SME Docs
